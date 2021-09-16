@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		FEC529CF26F2B068008A62BA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC529CE26F2B068008A62BA /* main.swift */; };
+		FEC529E526F2D862008A62BA /* EGB_Ships.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC529DE26F2D861008A62BA /* EGB_Ships.swift */; };
+		FEC529E626F2D862008A62BA /* EGB_Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC529DF26F2D862008A62BA /* EGB_Engine.swift */; };
+		FEC529E826F2D862008A62BA /* EGB_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC529E126F2D862008A62BA /* EGB_Extensions.swift */; };
+		FEC529E926F2D862008A62BA /* EGB_Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC529E226F2D862008A62BA /* EGB_Board.swift */; };
+		FEC529EA26F2D862008A62BA /* EGB_Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC529E326F2D862008A62BA /* EGB_Utils.swift */; };
+		FEC529EB26F2D862008A62BA /* EGB_Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC529E426F2D862008A62BA /* EGB_Ship.swift */; };
+		FEC529EE26F30345008A62BA /* EGB_AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC529ED26F30345008A62BA /* EGB_AI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +30,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FEC529CB26F2B068008A62BA /* Group-2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Group-2"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC529CB26F2B068008A62BA /* BattleShip */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BattleShip; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC529CE26F2B068008A62BA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FEC529DE26F2D861008A62BA /* EGB_Ships.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EGB_Ships.swift; sourceTree = "<group>"; };
+		FEC529DF26F2D862008A62BA /* EGB_Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EGB_Engine.swift; sourceTree = "<group>"; };
+		FEC529E126F2D862008A62BA /* EGB_Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EGB_Extensions.swift; sourceTree = "<group>"; };
+		FEC529E226F2D862008A62BA /* EGB_Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EGB_Board.swift; sourceTree = "<group>"; };
+		FEC529E326F2D862008A62BA /* EGB_Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EGB_Utils.swift; sourceTree = "<group>"; };
+		FEC529E426F2D862008A62BA /* EGB_Ship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EGB_Ship.swift; sourceTree = "<group>"; };
+		FEC529ED26F30345008A62BA /* EGB_AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGB_AI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +55,7 @@
 		FEC529C226F2B068008A62BA = {
 			isa = PBXGroup;
 			children = (
-				FEC529CD26F2B068008A62BA /* Group-2 */,
+				FEC529CD26F2B068008A62BA /* BattleShip */,
 				FEC529CC26F2B068008A62BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +63,32 @@
 		FEC529CC26F2B068008A62BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FEC529CB26F2B068008A62BA /* Group-2 */,
+				FEC529CB26F2B068008A62BA /* BattleShip */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FEC529CD26F2B068008A62BA /* Group-2 */ = {
+		FEC529CD26F2B068008A62BA /* BattleShip */ = {
 			isa = PBXGroup;
 			children = (
+				FEC529E226F2D862008A62BA /* EGB_Board.swift */,
+				FEC529DF26F2D862008A62BA /* EGB_Engine.swift */,
+				FEC529E126F2D862008A62BA /* EGB_Extensions.swift */,
+				FEC529E426F2D862008A62BA /* EGB_Ship.swift */,
+				FEC529DE26F2D861008A62BA /* EGB_Ships.swift */,
+				FEC529E326F2D862008A62BA /* EGB_Utils.swift */,
+				FEC529ED26F30345008A62BA /* EGB_AI.swift */,
 				FEC529CE26F2B068008A62BA /* main.swift */,
 			);
-			path = "Group-2";
+			path = BattleShip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FEC529CA26F2B068008A62BA /* Group-2 */ = {
+		FEC529CA26F2B068008A62BA /* BattleShip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FEC529D226F2B068008A62BA /* Build configuration list for PBXNativeTarget "Group-2" */;
+			buildConfigurationList = FEC529D226F2B068008A62BA /* Build configuration list for PBXNativeTarget "BattleShip" */;
 			buildPhases = (
 				FEC529C726F2B068008A62BA /* Sources */,
 				FEC529C826F2B068008A62BA /* Frameworks */,
@@ -77,9 +98,9 @@
 			);
 			dependencies = (
 			);
-			name = "Group-2";
+			name = BattleShip;
 			productName = "Group-2";
-			productReference = FEC529CB26F2B068008A62BA /* Group-2 */;
+			productReference = FEC529CB26F2B068008A62BA /* BattleShip */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FEC529C626F2B068008A62BA /* Build configuration list for PBXProject "Group-2" */;
+			buildConfigurationList = FEC529C626F2B068008A62BA /* Build configuration list for PBXProject "BattleShip" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FEC529CA26F2B068008A62BA /* Group-2 */,
+				FEC529CA26F2B068008A62BA /* BattleShip */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +140,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC529EA26F2D862008A62BA /* EGB_Utils.swift in Sources */,
+				FEC529EE26F30345008A62BA /* EGB_AI.swift in Sources */,
+				FEC529E526F2D862008A62BA /* EGB_Ships.swift in Sources */,
+				FEC529EB26F2D862008A62BA /* EGB_Ship.swift in Sources */,
+				FEC529E926F2D862008A62BA /* EGB_Board.swift in Sources */,
 				FEC529CF26F2B068008A62BA /* main.swift in Sources */,
+				FEC529E626F2D862008A62BA /* EGB_Engine.swift in Sources */,
+				FEC529E826F2D862008A62BA /* EGB_Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +290,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FEC529C626F2B068008A62BA /* Build configuration list for PBXProject "Group-2" */ = {
+		FEC529C626F2B068008A62BA /* Build configuration list for PBXProject "BattleShip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FEC529D026F2B068008A62BA /* Debug */,
@@ -271,7 +299,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FEC529D226F2B068008A62BA /* Build configuration list for PBXNativeTarget "Group-2" */ = {
+		FEC529D226F2B068008A62BA /* Build configuration list for PBXNativeTarget "BattleShip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FEC529D326F2B068008A62BA /* Debug */,
